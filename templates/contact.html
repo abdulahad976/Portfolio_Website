@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact - Abdul Ahad{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container px-5">
+        <!-- Contact form-->
+        <div class="bg-white shadow-lg rounded-4 py-5 px-4 px-md-5">
+            <div class="text-center mb-5">
+                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                    <i class="bi bi-envelope fs-3"></i>
+                </div>
+                <h1 class="fw-bolder">Get in Touch</h1>
+                <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <form method="POST" class="needs-validation" novalidate>
+                        {% csrf_token %}
+                        
+                        <div class="form-floating mb-4">
+                            {{ form.name }}
+                            <label for="{{ form.name.id_for_label }}" class="form-label">Enter your name</label>
+                            {% if form.name.errors %}
+                                <div class="invalid-feedback d-block">{{ form.name.errors }}</div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="form-floating mb-4">
+                            {{ form.email }}
+                            <label for="{{ form.email.id_for_label }}" class="form-label">Enter your email</label>
+                            {% if form.email.errors %}
+                                <div class="invalid-feedback d-block">{{ form.email.errors }}</div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="form-floating mb-4">
+                            {{ form.phone }}
+                            <label for="{{ form.phone.id_for_label }}" class="form-label">Enter your phone number</label>
+                            {% if form.phone.errors %}
+                                <div class="invalid-feedback d-block">{{ form.phone.errors }}</div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="form-floating mb-4">
+                            {{ form.message }}
+                            <label for="{{ form.message.id_for_label }}" class="form-label">Enter your thoughts</label>
+                            {% if form.message.errors %}
+                                <div class="invalid-feedback d-block">{{ form.message.errors }}</div>
+                            {% endif %}
+                        </div>
+                    
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg shadow-lg border-0" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Projects - Abdul Ahad{% endblock %}
+
+{% block content %}
+    <!-- Projects Section-->
+    <section class="py-5">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-3 fw-bolder mb-0"><span class="text-gradient d-inline">My Projects</span></h1>
+                <p class="lead fw-light mb-0 text-white">Showcasing my best work</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-12 col-xl-11 col-xxl-10">
+                    <!-- Project Card 1-->
+                    <div class="card overflow-hidden shadow-lg rounded-5 border-0 mb-5">
+                        <div class="card-body p-5">
+                            <h2 class="fw-bold text-primary mb-4">Blog Website</h2>
+                            <p class="text-muted mb-4">
+                                Developed a dynamic blog website featuring user authentication with secure login and signup capabilities.
+                                The platform integrates automated email notifications and employs Celery for efficient background task management,
+                                enhancing user engagement and operational efficiency.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Python</span>
+                                <span class="badge bg-secondary me-2">Django</span>
+                                <span class="badge bg-info">SQLite</span>
+                                <span class="badge bg-primary me-2">Celery</span><br><br>
+                                <span class="badge bg-secondary me-2">Html</span>
+                                <span class="badge bg-info">CSS</span>
+                            </div>
+                            <a href="https://github.com/abdulahad976/Blogs_Website-using-Django" target="_blank" class="btn btn-primary btn-sm px-4 py-2">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2-->
+                    <div class="card overflow-hidden shadow-lg rounded-5 border-0 mb-5">
+                        <div class="card-body p-5">
+                            <h2 class="fw-bold text-primary mb-4">Portfolio Website</h2>
+                            <p class="text-muted mb-4">
+                                Built a responsive portfolio website to showcase personal projects and skills. The site features a clean,
+                                modern design with easy navigation and detailed project descriptions.
+                                It's a professional platform to highlight web development expertise and connect with potential employers.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Python</span>
+                                <span class="badge bg-secondary me-2">Django</span>
+                                <span class="badge bg-info">Html</span>
+                                <span class="badge bg-secondary me-2">CSS</span> <br><br>
+                                <span class="badge bg-info">Bootstrap</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm px-4 py-2">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to action section-->
+    <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder mb-4">Let's build something amazing together</h2>
+                <p class="lead fw-normal text-white-50 mb-4">Ready to start your next project with me? Send me a message and let's discuss your ideas.</p>
+                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{% url 'contact' %}">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
