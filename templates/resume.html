@@ -5,8 +5,9 @@
 
 {% block content %}
 <!-- Page Content-->
-<div class="container-fluid px-5 my-5">
+<div style="background: linear-gradient(135deg, #e6dfba 0%, #3d9c75 100%);" class="container px-5 my-5">
     <div class="text-center mb-5">
+        <br><br>
         <h1 class="display-3 fw-bolder mb-0"><span class="text-gradient d-inline">Professional Resume</span></h1>
     </div>
     <div class="row gx-5 justify-content-center">
@@ -87,7 +88,7 @@
                             </div>
                             <div class="col-md-8">
                                 <p class="lead mb-4">Completed a comprehensive Computer Science program, developing strong skills in programming, algorithms, and software development. Engaged in challenging projects and coursework that fostered analytical thinking and problem-solving abilities.</p>
-                                <a href="{% static 'assets/transcript_final.pdf' %}" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <a style="background: linear-gradient(135deg, #5e67ec 0%, #d6feed 100%);border: 2px solid #ffafbd;" href="{% static 'assets/transcript_final.pdf' %}" class="btn btn-outline-primary btn-sm" target="_blank">
                                     <i class="bi bi-file-earmark-pdf me-2"></i>View Degree
                                 </a>
                             </div>
@@ -112,8 +113,8 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <p class="lead mb-4">Completed Pre-Medical studies with a focus on Biology, Chemistry, and Physics. This foundation in scientific principles and analytical thinking has proved invaluable in my transition to and success in the field of Computer Science.</p>
-                                <a href="{% static 'assets/fsc_degree.pdf' %}" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <p class="lead mb-4">Completed my Intermediate in Pre-Medical. The rigorous coursework and lab work have provided me with a deep understanding of the principles of life sciences, which has been invaluable in my academic journey and personal growth.</p>
+                                <a style="background: linear-gradient(135deg, #5e67ec 0%, #d6feed 100%); border: 2px solid #ffafbd;" href="{% static 'assets/fsc_degree.pdf' %}" class="btn btn-outline-primary btn-sm" target="_blank">
                                     <i class="bi bi-file-earmark-pdf me-2"></i>View Degree
                                 </a>
                             </div>
@@ -124,92 +125,102 @@
 
             <!-- Skills Section-->
 <section>
+    <div class="d-flex align-items-center mb-4">
+        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+        <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
+    </div>
+    <br>
     <div class="card shadow border-0 rounded-4">
         <div class="card-body p-5">
             <!-- Professional skills list-->
             <div class="mb-5">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
-                </div>
+
+
                 <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
-                            <i class="bi bi-code-square fs-4 text-primary me-3"></i>
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);border: 2px solid #ffafbd;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                            <i class="bi bi-code-square fs-4 text-primary me-2"></i>
                             <span>Software Development</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);border: 2px solid #ffafbd;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-globe fs-4 text-primary me-3"></i>
                             <span>Web Development</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);border: 2px solid #ffafbd;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-palette fs-4 text-primary me-3"></i>
                             <span>Design</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);border: 2px solid #ffafbd;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-server fs-4 text-primary me-3"></i>
                             <span>Database</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);border: 2px solid #ffafbd;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-cloud-upload fs-4 text-primary me-3"></i>
                             <span>Deployment</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);border: 2px solid #ffafbd;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-laptop fs-4 text-primary me-3"></i>
                             <span>User Interface Design</span>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="d-flex align-items-center mb-4">
+        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
+        <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages & Frameworks</span></h3>
+    </div>
+    <br>
             <!-- Languages list-->
+    <div class="card shadow border-0 rounded-4">
+        <div class="card-body p-5">
             <div class="mb-0">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                    <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages & Frameworks</span></h3>
-                </div>
+               
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border: 2px solid #4b5563;" class="d-flex align-items-center rounded-4 p-3 h-100">
                             <i class="bi bi-filetype-html fs-4 text-primary me-3"></i>
                             <span>HTML/CSS</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border: 2px solid #4b5563;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-filetype-js fs-4 text-primary me-3"></i>
                             <span>JavaScript</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border: 2px solid #4b5563;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-filetype-py fs-4 text-primary me-3"></i>
                             <span>Python</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border: 2px solid #4b5563;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-diagram-3 fs-4 text-primary me-3"></i>
                             <span>Django</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border: 2px solid #4b5563;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-gear fs-4 text-primary me-3"></i>
                             <span>Django Rest Framework</span>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
+                    <div  class="col">
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border: 2px solid #4b5563;" class="d-flex align-items-center bg-light rounded-4 p-3 h-100">
                             <i class="bi bi-table fs-4 text-primary me-3"></i>
                             <span>SQL</span>
                         </div>
@@ -218,6 +229,7 @@
             </div>
         </div>
     </div>
+    <br><br>
 </section>
         </div>
     </div>
